@@ -2,6 +2,7 @@
 A machine learning project to predict liver cirrhosis using clinical data. Models like Random Forest and XGBoost are trained, evaluated, and deployed via a Flask web app. Users can input patient data and get real-time predictions to support early diagnosis and better treatment planning.
 
 📊 Dataset
+
 Source: Collected healthcare data related to liver conditions.
 
 Format: .xlsx Excel file containing 41 columns — 40 input features and 1 target column.
