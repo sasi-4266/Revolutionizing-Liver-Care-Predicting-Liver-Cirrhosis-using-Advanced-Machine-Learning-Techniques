@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liver Cirrhosis Prediction</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f3f3;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3a3a3a;
+    }
+
+    form {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Liver Cirrhosis Prediction Form</h1>
+  <form method="POST" action="/predict">
+    {% set fields = [
+      'Age', 'Gender', 'Place(location where the patient lives)',
+      'Duration of alcohol consumption(years)', 'Quantity of alcohol consumption (quarters/day)',
+      'Type of alcohol consumed', 'Hepatitis B infection', 'Hepatitis C infection',
+      'Diabetes Result', 'Blood pressure (mmhg)', 'Obesity',
+      'Family history of cirrhosis/ hereditary', 'TCH', 'TG', 'LDL', 'HDL',
+      'Hemoglobin (g/dl)', 'PCV (%)', 'RBC (million cells/microliter)',
+      'MCV (femtoliters/cell)', 'MCH (picograms/cell)', 'Total Count',
+      'MCHC (grams/deciliter)', 'Polymorphs (%)', 'Lymphocytes (%)',
+      'Monocytes (%)', 'Eosinophils (%)', 'Basophils (%)',
+      'Platelet Count (lakhs/mm)', 'Total Bilirubin (mg/dl)', 'Direct (mg/dl)',
+      'Indirect (mg/dl)', 'Total Protein (g/dl)', 'Albumin (g/dl)',
+      'Globulin (g/dl)', 'A/G Ratio', 'AL.Phosphatase (U/L)', 'SGOT/AST (U/L)',
+      'SGPT/ALT (U/L)', 'USG Abdomen (diffuse liver or not)'
+    ] %}
+
+    {% for field in fields %}
+      <div class="form-group">
+        <label>{{ field }}</label>
+        <input type="text" name="{{ field }}" required>
+      </div>
+    {% endfor %}
+
+    <button type="submit">Predict</button>
+  </form>
+</body>
+</html>
+
