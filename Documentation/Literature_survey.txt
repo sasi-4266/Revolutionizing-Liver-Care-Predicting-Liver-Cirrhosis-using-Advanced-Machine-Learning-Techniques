@@ -1,0 +1,23 @@
+📚 Activity 3: Literature Survey
+As part of our project on Predicting Liver Cirrhosis using Machine Learning, we conducted a literature survey to explore existing approaches, techniques, and challenges in this domain. Several research papers and articles were reviewed, focusing on ML-based liver disease prediction.
+
+Most studies utilized publicly available datasets such as the Indian Liver Patient Dataset (ILPD) or Kaggle liver datasets. The commonly used algorithms included Logistic Regression, Decision Trees, Random Forest, Support Vector Machines (SVM), and Gradient Boosting. Ensemble models typically yielded higher accuracy, while deep learning approaches showed promising results but were often less interpretable.
+
+Key Observations from the Survey:
+
+Many models focused solely on liver-specific features, overlooking co-morbidities such as diabetes, which is a known risk factor for liver damage.
+
+Several studies faced challenges with imbalanced datasets and lacked emphasis on explainability, limiting clinical applicability.
+
+Very few implementations considered real-time integration with healthcare systems or end-to-end deployment.
+
+How Our Project Addresses These Gaps:
+
+We use a more comprehensive dataset (HealthCareData.xlsx) that includes both liver and diabetes-related indicators.
+
+The project emphasizes the use of interpretable models along with robust evaluation techniques.
+
+Real-world deployment is considered from the beginning, making our system more practical and scalable.
+
+This literature review was crucial in refining our problem definition, selecting meaningful features, and shaping the model development strategy.
+

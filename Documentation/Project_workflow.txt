@@ -1,0 +1,41 @@
+🔹 Activity 2: System Overview and Predictive Workflow Documentation
+Objective:
+To document the complete process of designing, developing, and deploying a machine learning model for liver cirrhosis prediction.
+
+Work Done:
+
+Developed a clear end-to-end pipeline covering all major stages:
+Data Acquisition → Preprocessing → Exploratory Data Analysis (EDA) → Feature Engineering → Model Training → Evaluation → Deployment
+
+Considered practical deployment aspects, including:
+
+Seamless integration with healthcare systems
+
+Support for real-time prediction
+
+Ensuring data privacy and model interpretability
+
+Topics Covered:
+
+Introduction to the role of ML in healthcare applications
+
+Dataset cleaning and preprocessing techniques
+
+EDA to uncover patterns and correlations
+
+Feature engineering and handling class imbalance
+
+Model training using Logistic Regression, Random Forest, SVM, and Gradient Boosting
+
+Performance evaluation using Accuracy, Precision, Recall, F1-Score, and ROC Curve
+
+Interpretability tools like SHAP values and feature importance plots
+
+Considerations for clinical deployment and system limitations
+
+Outcome:
+
+Created a comprehensive and well-structured documentation that outlines the entire system architecture, predictive workflow, and deployment plan.
+
+
+
